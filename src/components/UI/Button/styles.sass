@@ -1,0 +1,21 @@
+@use "../../../styles/util" as *
+
+button
+    @include flex(center)
+    @include radius
+    appearance: none
+    background: none
+    border: none
+    padding: 0
+    cursor: pointer
+    text-transform: capitalize
+    height: 2.5rem
+
+    &.primary
+        background-color: var(--color-primary)
+
+    &.secondary, &.terciary
+        color: var(--color-primary)
+
+    &.secondary
+        border: solid 2px

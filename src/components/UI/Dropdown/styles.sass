@@ -1,0 +1,26 @@
+@use "../../../styles/util" as *
+
+.dropdown-wrapper
+    position: relative
+
+    .options
+        margin-left: 1em
+
+        > .list
+            @include padding
+            @include flex
+            align-items: initial
+            flex-direction: column
+            row-gap: 1em
+            width: max-content
+
+        .dropdown-item a
+            @include padding-x(.5em)
+            @include flex
+            column-gap: .5em
+
+            > *
+                flex-shrink: 0
+                
+            .icon-wrapper
+                width: 1em

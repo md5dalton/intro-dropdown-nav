@@ -1,0 +1,42 @@
+@use '../../../styles/util' as *
+
+header
+    .flex-wrapper, .nav-bar
+        @include flex(space-between)
+        gap: 2em
+
+    .flex-wrapper
+        height: 5em
+
+    .logo a
+        @include flex
+        
+    .nav-bar
+        flex-grow: 1
+
+        .nav-item
+            @include padding-x
+
+        .nav-links, .nav-links > div, .user-buttons
+            @include flex
+
+        .nav-links button
+            gap: .5em
+
+    .dropdown-wrapper
+        position: relative
+
+        .options
+            @include shadow
+            @include radius
+            position: absolute
+            margin-top: 1em
+            background-color: var(--color-bg)
+
+    @include mobile-only
+        .nav-bar
+            display: none
+
+    @include tablet
+        .sidedrawer-toggler
+            display: none

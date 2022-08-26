@@ -1,0 +1,31 @@
+@use "../util" as *
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap')
+
+*, 
+*::before, 
+*::after
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+    background-color: var(--color-bg)
+    padding-bottom: 5em
+
+body, button, a
+    font-family: 'Epilogue', sans-serif
+    font-weight: 500
+    font-size: 18px
+    color: var(--color-text)
+
+header
+    @include container-a
+
+.icon-wrapper
+    @include flex
+
+a
+    text-decoration: none
+
+.sidedrawer-toggler
+    cursor: pointer

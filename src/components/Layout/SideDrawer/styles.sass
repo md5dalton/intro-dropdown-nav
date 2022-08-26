@@ -1,0 +1,54 @@
+@use '../../../styles/util' as *
+
+@include tablet
+    .side-drawer + .backdrop, .side-drawer
+        display: none
+
+.side-drawer + .backdrop
+    background-color: hsla(0, 0%, 0%, 0.3)
+
+.side-drawer
+    @include padding(1.5em)
+    position: fixed
+    top: 0
+    right: 0
+    height: 100vh
+    width: 70%
+    background-color: var(--color-bg)
+    z-index: 101
+
+    .backdrop
+        display: none
+
+    .sidedrawer-toggler
+        @include flex(flex-end)
+
+    .nav-bar
+        margin-top: 2em
+
+        button, .links-wrapper a
+            @include flex
+            margin-bottom: .5em
+
+        .buttons-wrapper button
+            gap: .5em
+
+        .links-wrapper, .user-buttons
+            @include flex
+            flex-direction: column
+            align-items: initial
+
+        .links-wrapper a
+            height: 2.2em
+
+        .user-buttons
+            margin-top: 1em
+
+    
+    .dropdown-wrapper .options
+        margin-top: -.5em
+
+    @include tablet
+        display: none
+
+    
