@@ -28,7 +28,7 @@ Your users should be able to:
 ### Links
 
 - Repository URL: [Github](https://github.com/md5dalton/intro-dropdown-nav)
-<!-- - Live Site URL: [Vercel](https://jobs-dalton.vercel.app) -->
+- Live Site URL: [Vercel](https://intro-dropdown-nav.vercel.app)
 <!-- - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges) -->
 
 

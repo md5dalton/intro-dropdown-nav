@@ -16,9 +16,7 @@ main
         font-size: 34px
         margin-top: 1.5em
         margin-bottom: 0
-
-        br
-            display: none
+        font-weight: 700
 
     p
         margin-top: 2.5em
@@ -54,6 +52,9 @@ main
                 &.hero-image
                     order: -1
 
+            h1 br
+                display: none
+
         .client-images .list 
             justify-content: space-between
 
@@ -65,10 +66,18 @@ main
         @include container-b
         
         #hero
-            display: grid
+            @include flex(space-between, flex-end)
             gap: 2em
-            grid-template-columns: 2fr 1fr
+            // display: grid
+            // grid-template-columns: 2fr 1fr
             margin-top: 2em
+
+            h1
+                font-size: 4em
+
+            .hero-image
+                max-width: 480px
             
         .client-images .list
             gap: 2em
+            flex-wrap: wrap
